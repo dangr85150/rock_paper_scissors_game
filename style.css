@@ -1,0 +1,49 @@
+/***********tout mettre a 0 dès le debut***************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/******* 2.5rem -> 16*2.5 = 40px *********/
+h1 {
+  padding: 2.5rem 1rem;
+  font-size: 8rem;
+  margin-bottom: 110px;
+  text-shadow: 7px 3px 19px white;
+  box-shadow: -0 18px 20px 5px rgba(255, 255, 255, 0.253);
+}
+
+h2 {
+  padding: 1rem 1rem;
+  font-size: 2.5rem;
+  color: lightblue;
+  margin-bottom: 30px;
+}
+
+p { 
+  font-size: 1.5rem;
+   color: lightgreen;
+}
+img {
+   width: 250px;
+   margin-bottom: 30px; 
+  }
+
+/************la transition permet d'agrandire lmes images au passage du pointeur***********/
+.choices > div {
+  display: inline-block;
+  margin: 0 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.choices > div:hover {
+  transform: scale(110%);
+  cursor: pointer;
+}
